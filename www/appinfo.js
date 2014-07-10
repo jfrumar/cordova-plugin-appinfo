@@ -4,7 +4,7 @@ var exec = require('cordova/exec');
 module.exports = {
 
     getAppInfo: function(success, fail){
-        exec(callback, fail, 'AppInfo', 'getAppInfo', []);
+        exec(success, fail, 'AppInfo', 'getAppInfo', []);
     },
 
     /**
