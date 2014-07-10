@@ -3,10 +3,8 @@ var exec = require('cordova/exec');
 
 module.exports = {
 
-    getAppInfo: function(callback){
-        exec(callback, function(err){
-            callback(err);
-        }, 'AppInfo', 'getAppInfo', []);
+    getAppInfo: function(success, fail){
+        exec(callback, fail, 'AppInfo', 'getAppInfo', []);
     },
 
     /**
